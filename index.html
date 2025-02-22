@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge@">
+    <meta name="viewport" content="width=device-width, initial-scaale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: pink;
+            overflow: hidden;
+        }
+            h1 {
+                text-align: center;
+                color: white;
+                margin-top: 200px;
+            }
+        .btn {
+            position: absolute;
+            top: 50%;
+            width: 100px;
+            height: 40px;
+            background: aqua;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 40px;
+            border: solid black 2px;
+        }
+        .ok{
+            Jeft: 30%;
+            ok:hover;
+            cursor: pointer;
+        }
+        .ok:hover{
+        //改变鼠标指针 的样式(变成点击的鼠标样式)
+        cursor : pointer
+        }
+        .on{
+            left: 60%;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+<h1>你喜欢我吗</h1>
+<div class="ww">
+    <div class="btn ok">喜欢</div>
+<div class="btn on">不喜欢</div>
+<script>
+    let on=document.querySelector('.on')
+    on.addEventListener("mouseover", function(){
+        this.style.top = Math.round(Math.random() * 80) + "%";
+        this.style.left = Math.round(Math.random() * 80) + "%";
+    })
+    let ok = document.getElementsByClassName('ok')[0]
+    ok.addEventListener("click",function(){alert("就知道你喜欢我")
+    })
+</script>
+</div>
+</body>
+</html>
